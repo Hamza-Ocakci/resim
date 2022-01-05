@@ -1,0 +1,9 @@
+import cv2
+resim = cv2.imread("ucak.jpg")
+cerceve1=cv2.copyMakeBorder(resim,10,10,10,10,cv2.BORDER_CONSTANT,value=[260,96,87])
+cerceve2=cv2.copyMakeBorder(resim,10,10,10,10,cv2.BORDER_WRAP,value=[260,96,87])
+cerceve3=cv2.copyMakeBorder(resim,10,10,10,10,cv2.BORDER_REPLICATE,value=[260,96,87])
+cerceve4=cv2.copyMakeBorder(resim,10,10,10,10,cv2.B,value=[260,96,87])
+cv2.imshow("benim",cerceve)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
